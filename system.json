@@ -29,7 +29,7 @@
   "primaryTokenAttribute": "health",
   "url": "https://github.com/ExpoundingTurtle/maleghast-unofficial",
   "manifest": "https://raw.githubusercontent.com/ExpoundingTurtle/maleghast-unofficial/master/system.json",
-  "download": "",
+  "download": "https://github.com/ExpoundingTurtle/maleghast-unofficial/archive/refs/tags/v0.0.2.zip",
   "license": "LICENSE.txt",
   "changelog": "CHANGELOG.md"
 }
