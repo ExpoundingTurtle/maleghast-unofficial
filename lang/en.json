@@ -1,22 +1,22 @@
 {
-  "BOILERPLATE.AbilityStr": "Strength",
-  "BOILERPLATE.AbilityCon": "Constitution",
-  "BOILERPLATE.AbilityDex": "Dexterity",
-  "BOILERPLATE.AbilityInt": "Intelligence",
-  "BOILERPLATE.AbilityWis": "Wisdom",
-  "BOILERPLATE.AbilityCha": "Charisma",
+  "MALEGHAST_UNOFFICIAL.AbilityStr": "Strength",
+  "MALEGHAST_UNOFFICIAL.AbilityCon": "Constitution",
+  "MALEGHAST_UNOFFICIAL.AbilityDex": "Dexterity",
+  "MALEGHAST_UNOFFICIAL.AbilityInt": "Intelligence",
+  "MALEGHAST_UNOFFICIAL.AbilityWis": "Wisdom",
+  "MALEGHAST_UNOFFICIAL.AbilityCha": "Charisma",
 
-  "BOILERPLATE.AbilityStrAbbr": "str",
-  "BOILERPLATE.AbilityConAbbr": "con",
-  "BOILERPLATE.AbilityDexAbbr": "dex",
-  "BOILERPLATE.AbilityIntAbbr": "int",
-  "BOILERPLATE.AbilityWisAbbr": "wis",
-  "BOILERPLATE.AbilityChaAbbr": "cha",
+  "MALEGHAST_UNOFFICIAL.AbilityStrAbbr": "str",
+  "MALEGHAST_UNOFFICIAL.AbilityConAbbr": "con",
+  "MALEGHAST_UNOFFICIAL.AbilityDexAbbr": "dex",
+  "MALEGHAST_UNOFFICIAL.AbilityIntAbbr": "int",
+  "MALEGHAST_UNOFFICIAL.AbilityWisAbbr": "wis",
+  "MALEGHAST_UNOFFICIAL.AbilityChaAbbr": "cha",
 
-  "BOILERPLATE.EffectCreate": "Create Effect",
-  "BOILERPLATE.EffectToggle": "Toggle Effect",
-  "BOILERPLATE.EffectEdit": "Edit Effect",
-  "BOILERPLATE.EffectDelete": "Delete Effect",
+  "MALEGHAST_UNOFFICIAL.EffectCreate": "Create Effect",
+  "MALEGHAST_UNOFFICIAL.EffectToggle": "Toggle Effect",
+  "MALEGHAST_UNOFFICIAL.EffectEdit": "Edit Effect",
+  "MALEGHAST_UNOFFICIAL.EffectDelete": "Delete Effect",
 
-  "BOILERPLATE.Add": "Add"
+  "MALEGHAST_UNOFFICIAL.Add": "Add"
 }

@@ -3,15 +3,20 @@
     "types": ["character", "npc"],
     "templates": {
       "base": {
-        "health": {
-          "value": 10,
+        "hp": {
+          "value": 0,
           "min": 0,
-          "max": 10
+          "max": 20
         },
-        "power": {
-          "value": 5,
+        "mv": {
+          "value": 0,
           "min": 0,
-          "max": 5
+          "max": 20
+        },
+        "df": {
+          "value": 0,
+          "min": 0,
+          "max": 20
         },
         "biography": ""
       }
@@ -43,31 +48,25 @@
           "value": 10
         }
       }
-    },
-    "npc": {
-      "templates": ["base"],
-      "cr": 0
     }
   },
   "Item": {
-    "types": ["item", "feature", "spell"],
+    "types": ["trait", "act", "soul"],
     "templates": {
       "base": {
         "description": ""
       }
     },
-    "item": {
+    "trait": {
       "templates": ["base"],
-      "quantity": 1,
-      "weight": 0,
-      "formula": "d20 + @str.mod + ceil(@lvl / 2)"
+      "formula": "d6"
     },
-    "feature": {
+    "act": {
       "templates": ["base"]
     },
-    "spell": {
+    "soul": {
       "templates": ["base"],
-      "spellLevel": 1
+      "cost": 1
     }
   }
 }
