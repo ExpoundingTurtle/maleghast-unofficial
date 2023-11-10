@@ -31,14 +31,36 @@
             <input
               type="text"
               name="system.health.value"
-              value="{{system.health.value}}"
+              value="{{system.hp.value}}"
               data-dtype="Number"
             />
             <span> / </span>
             <input
               type="text"
               name="system.health.max"
-              value="{{system.health.max}}"
+              value="{{system.hp.max}}"
+              data-dtype="Number"
+            />
+          </div>
+        </div>
+        <div class="resource flex-group-center">
+          <label for="system.mv.value" class="resource-label">Move</label>
+          <div class="resource-content flexrow flex-center flex-between">
+            <input
+              type="text"
+              name="system.mv.value"
+              value="{{system.mv.value}}"
+              data-dtype="Number"
+            />
+          </div>
+        </div>
+        <div class="resource flex-group-center">
+          <label for="system.mv.value" class="resource-label">Defense</label>
+          <div class="resource-content flexrow flex-center flex-between">
+            <input
+              type="text"
+              name="system.df.value"
+              value="{{system.df.value}}"
               data-dtype="Number"
             />
           </div>
@@ -51,7 +73,6 @@
     {{!-- Default tab is specified in actor-sheet.mjs --}}
     <a class="item" data-tab="features">Features</a>
     <a class="item" data-tab="description">Description</a>
-    <a class="item" data-tab="items">Items</a>
     <a class="item" data-tab="soul">SOUL</a>
     <a class="item" data-tab="effects">Effects</a>
   </nav>
@@ -61,12 +82,6 @@
     {{!-- Owned Features Tab --}}
     <div class="tab features" data-group="primary" data-tab="features">
       <section class="grid grid-3col">
-        <aside class="sidebar">
-          {{!-- The grid classes are defined in scss/global/_grid.scss. To use,
-          use both the "grid" and "grid-Ncol" class where "N" can be any number
-          from 1 to 12 and will create that number of columns. --}}
-        </aside>
-
         {{!-- For the main features list, span the right two columns --}}
         <section class="main grid-span-2">
           {{!-- This is a Handlebars partial. They're stored in the `/parts`
@@ -83,12 +98,6 @@
       you need to pass the actor's roll data to the rollData property. --}}
       {{editor system.biography target="system.biography" rollData=rollData
       button=true owner=owner editable=editable}}
-    </div>
-
-    {{!-- Owned Items Tab --}}
-    <div class="tab items" data-group="primary" data-tab="items">
-      {{>
-      "systems/maleghast_unofficial/templates/actor/parts/actor-items.html"}}
     </div>
 
     {{!-- Owned Spells Tab --}}
