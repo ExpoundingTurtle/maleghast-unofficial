@@ -31,40 +31,28 @@
             <input
               type="text"
               name="system.health.value"
-              value="{{system.hp.value}}"
+              value="{{system.health.value}}"
               data-dtype="Number"
             />
             <span> / </span>
             <input
               type="text"
               name="system.health.max"
-              value="{{system.hp.max}}"
+              value="{{system.health.max}}"
               data-dtype="Number"
             />
           </div>
         </div>
-        <div class="resource flex-group-center">
-          <label for="system.mv.value" class="resource-label">Move</label>
-          <div class="resource-content flexrow flex-center flex-between">
-            <input
-              type="text"
-              name="system.mv.value"
-              value="{{system.mv.value}}"
-              data-dtype="Number"
-            />
-          </div>
-        </div>
-        <div class="resource flex-group-center">
-          <label for="system.mv.value" class="resource-label">Defense</label>
-          <div class="resource-content flexrow flex-center flex-between">
-            <input
-              type="text"
-              name="system.df.value"
-              value="{{system.df.value}}"
-              data-dtype="Number"
-            />
-          </div>
-        </div>
+        <ol class="attributes-list">
+          {{#each actor.data.attributes as |attrib key|}}
+          <li class="attribute flexrow" data-attribute="{{key}}">
+              <span class="attribute-label flexrow" name="data.attributes.{{key}}.label">{{label}}</span>
+              <div class="attribute-editbox flexrow">
+                  <input class="attribute-value" type="text" name="data.attributes.{{key}}.value" value="{{attrib.value}}" data-dtype="Number"/>
+              </div>
+          </li>
+          {{/each}}
+      </ol>
     </div>
   </header>
 

@@ -3,32 +3,35 @@
     "types": ["unit", "necromancer"],
     "templates": {
       "base": {
-        "hp": {
+        "health": {
           "value": 0,
           "min": 0,
-          "max": 20
+          "label": "Health"
         },
-        "mv": {
-          "value": 0,
-          "min": 0,
-          "max": 20
+        "statistics": {
+          "move": {
+            "value": 0,
+            "label": "Move"
+          },
+          "defense": {
+            "value": 0,
+            "max": 6,
+            "label": "Defense"
+          },
+          "armor": {
+            "value": 0,
+            "max": 3,
+            "label": "Armor"
+          }
         },
-        "df": {
-          "value": 0,
-          "min": 0,
-          "max": 20
-        },
-        "biography": ""
-      },
-      "unit": {
-        "templates": ["base"],
         "traits": [],
         "acts": []
       },
+      "unit": {
+        "templates": ["base"]
+      },
       "necromancer": {
         "templates": ["base"],
-        "traits": [],
-        "acts": [],
         "souls": []
       }
     }
