@@ -32,7 +32,10 @@
       },
       "necromancer": {
         "templates": ["base"],
-        "souls": []
+        "souls": {
+          "value": 0,
+          "label": "Souls"
+        }
       }
     }
   },

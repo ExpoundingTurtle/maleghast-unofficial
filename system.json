@@ -2,7 +2,7 @@
   "id": "maleghast_unofficial",
   "title": "Maleghast 666",
   "description": "Based on Abadon's Maleghast 666!",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "compatibility": {
     "minimum": 10,
     "verified": "10.287"
@@ -28,7 +28,7 @@
   "primaryTokenAttribute": "health",
   "url": "https://github.com/ExpoundingTurtle/maleghast-unofficial",
   "manifest": "https://raw.githubusercontent.com/ExpoundingTurtle/maleghast-unofficial/master/system.json",
-  "download": "https://github.com/ExpoundingTurtle/maleghast-unofficial/archive/refs/tags/v1.0.7.zip",
+  "download": "https://github.com/ExpoundingTurtle/maleghast-unofficial/archive/refs/tags/v1.0.8.zip",
   "license": "LICENSE.txt",
   "changelog": "CHANGELOG.md"
 }
