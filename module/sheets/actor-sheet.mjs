@@ -19,7 +19,7 @@ export class Maleghast_UnofficialActorSheet extends ActorSheet {
         {
           navSelector: ".sheet-tabs",
           contentSelector: ".sheet-body",
-          initial: "features",
+          initial: "traits",
         },
       ],
     });
@@ -75,11 +75,7 @@ export class Maleghast_UnofficialActorSheet extends ActorSheet {
    * @return {undefined}
    */
   _prepareCharacterData(context) {
-    // Handle ability scores.
-    for (let [k, v] of Object.entries(context.system.abilities)) {
-      v.label =
-        game.i18n.localize(CONFIG.MALEGHAST_UNOFFICIAL.abilities[k]) ?? k;
-    }
+   
   }
 
   /**
